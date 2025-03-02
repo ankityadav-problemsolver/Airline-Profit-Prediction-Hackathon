@@ -236,7 +236,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\n# Load the trained model\nmodel = joblib.load(\"../Machine_Learning/best_model.pkl\")\n@app.route(\"/\", methods=[\"GET\"])\ndef home():\n    return jsonify({\"message\": \"Welcome to the Airline Profit Prediction API!\", \"status\": \"Running\"}), 200\n@app.route(\"/predict\", methods=[\"POST\"])\ndef predict():\n    try:\n        # Get JSON data from request",
+        "peekOfCode": "app = Flask(__name__)\n# Load the trained model\nmodel = joblib.load(\"Machine_Learning/best_model.pkl\")\n@app.route(\"/\", methods=[\"GET\"])\ndef home():\n    return jsonify({\"message\": \"Welcome to the Airline Profit Prediction API!\", \"status\": \"Running\"}), 200\n@app.route(\"/predict\", methods=[\"POST\"])\ndef predict():\n    try:\n        # Get JSON data from request",
         "detail": "app",
         "documentation": {}
     },
@@ -245,7 +245,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "model = joblib.load(\"../Machine_Learning/best_model.pkl\")\n@app.route(\"/\", methods=[\"GET\"])\ndef home():\n    return jsonify({\"message\": \"Welcome to the Airline Profit Prediction API!\", \"status\": \"Running\"}), 200\n@app.route(\"/predict\", methods=[\"POST\"])\ndef predict():\n    try:\n        # Get JSON data from request\n        data = request.get_json()\n        # Ensure data is formatted as a DataFrame",
+        "peekOfCode": "model = joblib.load(\"Machine_Learning/best_model.pkl\")\n@app.route(\"/\", methods=[\"GET\"])\ndef home():\n    return jsonify({\"message\": \"Welcome to the Airline Profit Prediction API!\", \"status\": \"Running\"}), 200\n@app.route(\"/predict\", methods=[\"POST\"])\ndef predict():\n    try:\n        # Get JSON data from request\n        data = request.get_json()\n        # Ensure data is formatted as a DataFrame",
         "detail": "app",
         "documentation": {}
     }
